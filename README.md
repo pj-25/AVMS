@@ -1,12 +1,8 @@
-# 🅿️ PAP - PayAndPark 🚙
+# 🅿️ AVMS - Automated Vehicle Management System 🚙
 
 The Pay And Park is an application that lets parking service provider to register their service and enable customers to login to the system and book the parking space. The system also shows user profile, current booking status,and booking history.
 
 Thus, the system is developed as a generalized solution to provide online platform to register the parking service and let customer book parking space at anytime, from anywhere.
-
-```
-Project Title: PAP - Pay And Park
-```
 
 ## Configure MySQL database:
 	database name: pap
