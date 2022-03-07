@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainPane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pap.papUser.controller.MainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Logout and Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane fx:id="mainSplitPane" dividerPositions="0.2" prefHeight="${mainSplitPane.parent.height}" prefWidth="600.0">
+        <items>
+            <Accordion style="-fx-background-color: #333;">
+              <panes>
+                <TitledPane animated="false" style="-fx-background-color: blue; -fx-font: white;" text="Profile">
+                     <content>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #333;">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/user.png" />
+                                 </image>
+                                 <VBox.margin>
+                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <Button fx:id="profileBtn" mnemonicParsing="false" onAction="#openProfile" prefHeight="26.0" prefWidth="210.0" text="View Profile" textAlignment="CENTER" />
+                              <Button fx:id="editProfileBtn" disable="true" layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#openEditProfile" prefHeight="26.0" prefWidth="210.0" text="Edit Profile" textAlignment="CENTER" />
+                              <Button fx:id="logoutBtn" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="210.0" text="Logout and Quit" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                     </content>
+                </TitledPane>
+                  <TitledPane animated="false" text="My Vehicles">
+                      <content>
+                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #333;">
+                              <children>
+                                  <Button fx:id="addVehicleBtn" mnemonicParsing="false" onAction="#openAddVehicle" prefHeight="26.0" prefWidth="210.0" text="Add Vehicle" textAlignment="CENTER" />
+                                  <Button fx:id="savedVehiclesBtn" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#openSavedVehicles" prefHeight="26.0" prefWidth="210.0" text="Saved vehicles" textAlignment="CENTER" />
+                              </children>
+                          </VBox>
+                      </content>
+                  </TitledPane>
+                  <TitledPane animated="false" text="Parking Service">
+                      <content>
+                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #333;">
+                              <children>
+                                  <Button fx:id="bookParkingSpaceBtn" mnemonicParsing="false" onAction="#openBookParkingSpace" prefHeight="26.0" prefWidth="210.0" text="Book Parking Space" textAlignment="CENTER" />
+                                  <Button fx:id="currentBookingBtn" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#openCurrentBooking" prefHeight="26.0" prefWidth="210.0" text="Current Booking" textAlignment="CENTER" />
+                              <Button fx:id="parkingHistoryBtn" layoutX="20.0" layoutY="46.0" mnemonicParsing="false" onAction="#openBookingHistory" prefHeight="26.0" prefWidth="210.0" text="Booking History" textAlignment="CENTER" />
+                              </children>
+                          </VBox>
+                      </content>
+                  </TitledPane>
+              </panes>
+            </Accordion>
+            <ScrollPane fx:id="viewPane" fitToHeight="true" fitToWidth="true">
+               <content>
+                  <VBox id="viewPane" alignment="CENTER" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="375.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/valet-parking.png" />
+                           </image>
+                        </ImageView>
+                        <Label id="pageTitle" text="Pay and Park">
+                           <font>
+                              <Font name="Monospaced Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

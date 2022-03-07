@@ -1,0 +1,9 @@
+avms
+avms.admin
+avms.admin.controller
+avms.customer
+avms.customer.controller
+avms.databaseHandler
+avms.entity
+avms.userAuthentication.controller
+avms.userProfile.controller

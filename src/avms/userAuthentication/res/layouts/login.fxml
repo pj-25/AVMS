@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="mainPane" minHeight="500.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avms.userAuthentication.controller.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="371.0" prefWidth="456.0" spacing="10.0" style="-fx-background-color: #434343;">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/log-in(1).png" />
+               </image>
+            </ImageView>
+            <Label id="pageTitle" text="LOGIN" textFill="#03cd7f">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <Label text="Login ID" />
+                  <TextField fx:id="loginId" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="221.0" spacing="10.0">
+               <children>
+                  <Label text="Password" />
+                  <PasswordField fx:id="password" />
+                  <CheckBox fx:id="showBox" mnemonicParsing="false" onAction="#showPassword" text="show" />
+               </children>
+            </HBox>
+            <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#login" text="Login" />
+            <Separator prefWidth="200.0" />
+            <Label text="New User?" />
+            <Button fx:id="registerBtn" mnemonicParsing="false" onAction="#register" text="Register" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>
