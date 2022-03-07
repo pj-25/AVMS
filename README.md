@@ -1,4 +1,4 @@
-# 🅿️ PayAndPark 🚙
+# 🅿️ PAP - PayAndPark 🚙
 
 The Pay And Park is an application that lets parking service provider to register their service and enable customers to login to the system and book the parking space. The system also shows user profile, current booking status,and booking history.
 
