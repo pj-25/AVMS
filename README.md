@@ -1,5 +1,8 @@
 # 🅿️ AVMS - Automated Vehicle Management System 🚙
 
+> <!-- history-note --> **Historical project (2022-03 · JavaFX, MySQL).** Kept as originally built; not maintained. Part of my engineering journey: see [my profile](https://github.com/pj-25).
+
+
 The Pay And Park is an application that lets parking service provider to register their service and enable customers to login to the system and book the parking space. The system also shows user profile, current booking status,and booking history.
 
 Thus, the system is developed as a generalized solution to provide online platform to register the parking service and let customer book parking space at anytime, from anywhere.
@@ -83,3 +86,8 @@ pap/
     │       └── style.css
     └── UserData.java
 ```
+
+## History
+A college project: a pay-and-park vehicle management system, uploaded in a single day from an earlier local project.
+
+Archived on GitHub in 2026 as a read-only record. The code and commit history are unchanged.
